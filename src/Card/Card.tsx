@@ -12,7 +12,7 @@ const Card = ({
     <>
         <div className='card-body'>{body}</div>
         <div className='card-title'>
-            <h2>{title}</h2>
+            <h2>Poulet</h2>
         </div>
         {
             footer &&
