@@ -11,7 +11,9 @@ const Card = ({
   return (
     <>
         <div className='card-body'>{body}</div>
-        <div className='card-title'>{title}</div>
+        <div className='card-title'>
+            <h2>{title}</h2>
+        </div>
         {
             footer &&
             <div className='card-footer'>{footer}</div>
