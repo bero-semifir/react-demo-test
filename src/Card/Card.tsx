@@ -1,5 +1,6 @@
 import React from 'react';
 import CardProps from './Card.type';
+import './Card.css';
 
 const Card = ({
     title,
@@ -9,11 +10,11 @@ const Card = ({
     buttonAction
 }: CardProps) => {
   return (
-    <>
-        <div className='card-body'>{body}</div>
+    <div className='card'>
         <div className='card-title'>
             <h2>{title}</h2>
         </div>
+        <div className='card-body'>{body}</div>
         {
             footer &&
             <div className='card-footer'>{footer}</div>
@@ -22,7 +23,7 @@ const Card = ({
             buttonLabel &&
             <button onClick={buttonAction}>{buttonLabel}</button>
         }
-    </>
+    </div>
   )
 }
 

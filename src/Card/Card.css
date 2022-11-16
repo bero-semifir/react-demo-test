@@ -1,0 +1,33 @@
+.card-title {
+    text-align: center;
+}
+.card-body {
+    font-weight: bold;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 1em;
+    border-radius: 1rem;
+}
+
+.card * {
+    color: black;
+}
+
+@media (prefers-color-scheme: dark){
+    .card * {
+        color: whitesmoke;
+    }
+
+    .card {
+        /* background-color: rgba(255, 255, 255, 0.75); */
+    }
+    .card button {
+        color: black;
+    }
+}
